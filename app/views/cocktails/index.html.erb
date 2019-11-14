@@ -1,5 +1,6 @@
 <h1>Mister cocktaiiiiiil, sans alcool la fête est plus fun!</h1>
 
 <% @cocktails.each do |cocktail| %>
-<h2><%= cocktail.name %></h2>
+  <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
 <% end %>
+<%= link_to 'Add a cocktail', new_cocktail_path  %>
