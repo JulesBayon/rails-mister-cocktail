@@ -5,5 +5,8 @@
   <p></p>
 <% end %>
 <p><%= link_to "Add a new dose", new_cocktail_dose_path(@cocktail) %></p>
-<p><%= link_to "Delete a dose", cocktail_dose_path(@cocktail), method: :delete, data: { confirm: "Are you sure ?" } %></p>
-<p><%= link_to 'Back to cocktails', cocktails_path  %></p>
+<p><%= link_to "Delete a dose", cocktail_doses_path(@cocktail), method: :delete, data: { confirm: "Are you sure ?" } %></p>
+<p><%= link_to 'Back to cocktails', root_path  %></p>
+
+<%= cl_image_tag("rPx1b5tTxpcddqeyafFJ473W",
+      width: 400, height: 300, crop: :fill) %>
